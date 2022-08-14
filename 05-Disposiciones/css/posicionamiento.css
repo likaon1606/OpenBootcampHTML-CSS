@@ -1,0 +1,47 @@
+div {
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px;
+    /* static no puede ser afectado en el posicionamiento */
+}
+
+/* Posicionamiento relativo -> se posiciona en relación al
+posicionamiento original */
+.relative {
+    position: relative;
+    left: 80px;
+    margin-left: 10px;
+}
+
+/* Posicionamiento fijo -> se posiciona en relación a 
+la pantalla */
+.fixed {
+    position: fixed;
+    bottom: 0px;/* que esté siempre abajo de todo */
+    left: 0px;/* que esté siempre a la izquierda de todo */
+    background-color: greenyellow;
+    z-index: 10;/* para verse por encima o por debajo de los elementos */
+}
+
+/* Posicionamiento absoluto -> */
+.absolute {
+    position: absolute;
+    bottom: 30px; 
+    right: 0px; /*se pone a la derecha de su div contenedor*/
+}
+
+.relative.contenedor {
+    width: 300px;
+    height: 800px;
+    background-color: blue;
+}
+
+/* sticky hace que se peguen los elementos donde le digamos
+normalmente se usa en barras de navegacion y menus */
+.sticky {
+    position: sticky;
+    background-color: darksalmon;
+    color: white;
+    top: 0px;
+    z-index: 2;
+}

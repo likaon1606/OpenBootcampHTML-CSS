@@ -1,0 +1,40 @@
+/* todo lo que este dentro del contenedor que tiene "flex"
+lo está posicionando dentro, de manera ordenada, por defecto en una fila */
+
+/* ATENCION!! 
+PÁGINA PARA EXPERIMENTAR CON CSS
+
+*/
+
+.flex {
+    display: flex;
+    flex-direction: column;/*dispone los elementos en vertical*/
+    background-color: yellow;
+    height: 300px;
+    /*justify-content: space-between; Distribuye el espacio que hay en el contenedor entre los elementos*/
+    justify-content: space-around;/* distribuye el espacio entre elementos y lo distribuye */
+    /*flex-wrap: wrap; traslada los elementos para no redimensionarlos y cuando cambia el tamapo de pantalla
+    los coloca en posición vertical*/
+    align-items: center; /*centra los elementos en horizontal */
+}
+
+.contenido-1 {
+    background-color: white;
+    /* height: 200px; */
+    width: 100px;
+    border: 1px solid blue;
+}
+
+.contenido-2 {
+    background-color: white;
+    /* height: 200px; */
+    width: 100px;
+    border: 1px solid blue;
+}
+
+.contenido-3 {
+    background-color: white;
+    /* height: 200px; */
+    width: 100px;
+    border: 1px solid blue;
+}
