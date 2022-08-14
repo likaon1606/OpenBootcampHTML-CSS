@@ -1,0 +1,48 @@
+div {
+    display: inline-block;
+    margin: 5px;   
+}
+
+.contenedor-hidden {
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    overflow: hidden;/*hidden, todo lo que sobresalga del área que se oculte*/ 
+}
+
+.contenedor-scroll {
+    background-color: yellowgreen;
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    overflow: scroll;/* scroll crea una barra que permite hacer scrool
+    sobre el contenido que se desborda */ 
+}
+
+.contenedor-visible {
+    background-color: blueviolet;
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    overflow: visible; /*visible muestra el contenido desbordado
+    es el por defecto en overflow*/
+}
+
+.contenedor-auto {
+    background-color: palegreen;
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    overflow: auto; /*optimiza con un scroll 
+    para que se pueda leer la información sin que se corte*/
+}
+
+.contenedor-scroll-x {
+    background-color: brown;
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    overflow-y: scroll;/* muestra el scroll del eje y*/
+    overflow-x: hidden; /*oculta el scroll del eje x*/
+}
