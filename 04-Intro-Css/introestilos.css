@@ -1,0 +1,50 @@
+.colores {
+    color: orangered;
+}
+
+.color-hexadecimal {
+    color: #d90368;
+}
+
+.color-rgb {
+    color: rgb(198, 201, 50);
+}
+
+.color-rgba {
+    color: rgba(10, 10, 10, 0.2);
+}
+
+/* Fondos */
+
+.fondo {
+    /* background-color: cornflowerblue; */
+    background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHUAuAMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAABAgMABwYE/8QAHxAAAwEBAQADAQEBAAAAAAAAAAECESExAxJRQTIi/8QAFwEBAQEBAAAAAAAAAAAAAAAAAwIGBP/EABgRAQEBAQEAAAAAAAAAAAAAAAEAAhEh/9oADAMBAAIRAxEAPwD2z6RpYyv2RL5K7w7M2MyUrf8ABBqEEJiLJU9fo9eEmWEhangnvgX1CeFlYU6b0H2Zq69EdFhKEabawjSx4O7J10sOSZOS0hKG+zQtUISkjWCMdsg/SwkC1rhIpT4RtsQJckW8EbYNBVJIsKwhT5hK39VoW9EvqLJckrehJswnJOXR23vTU+Gr0WvDOWSJRHwZrCdlhIEG/wCkqro1MQQJQj6SpjN4RpdKCTJFvhJscSkISFGt0GjVmExCYlp9Nugr0XwuvlqZKuMe2/4iVt6XkkyQZJvozJVxiBLkjS/ovGDRXxlkgQaxiP8Ao9PhGtKCvJJVJMwGYWW6U8wk2jOvwk2ZzJZPOY1QjfAsRlhIEjfQN4GlhOmIShK30wG0hHf4VWRpk7vmGp8J+iBIErJa5ZShLXExCUkuuiOhmtFc4WSEPsyTfWUZO14WEgSUyNelKRJ+iEubAbM2TttlhIELYu8M0JbxFhIElPphG0zCck5dGFYW8EdGdLKBCnnBHpq0VU/6WEgWrcJPSraaJsrNeadCFKaEeCEhJXgg1sldfhQS5LW98Ep8C6I3T0QJDNm8B9xKYNE5KZjddJ3fDXXSVPhYV5LP5H4RYzFrwQmyQA/BdZvsXyvkPES+To9MWlqKK8+XzmGZhJrodaJTwrS1EmjPFlMytk2+jsm0WSENEquhbxE2WEgWbX6K6FrohYSBGhH0NMQsrCnVdJ3XR6RKhCbJbTPoptwuuS/SdD1XSNsvJJm1NJEqfTN6KxAmCOoSmB0KyysLMV3ngKbzCbLCTJI7esIlehE5LwukNvBH+hbA2sM2WSCS2JpnXRKoQkCW30S3iG0W1wslKbYtMbCV10QkLAYroH20rlfIU8IN9KWRti5lyWdIUDBuF8lCHycJW9Ht6Sp9LzJkkfBafB2SqlohISP0GhprBNLlLV+k6ZX1EfkKK807emAwCS3R+grwdr8J16Z0ske02I+ht9FZZKSmp8Eb6CqWF8kCW6JUM6J02xAlCwj4DSdvpYSBNT0j8g/2Ep9LJMkm/otUamkwfZCSBB0iNN6VeE6aKJCR+E64NVYSutYoShBvRWEWqwskC24T+Sg7ot/5KCsKemFbwInJeXSG2kJpjGbLJFKvRL8MYQkKdE6MYQlKVv8A6wGmMITEt+ErCYoqKbFfhjFkhT9EpYAxcsHxEqMYQkKVekzGFJiAldMYorKbeCN6YwkhI/DGMVJf/9k=");
+    background-position: right bottom;
+}
+
+.fondo-interno {
+    /* background-color: cornflowerblue; */
+    background-image: url("./fondo.jpg");
+    background-position: right bottom;
+}
+
+/* Tamaños */
+.ancho {
+    background-color: aquamarine;
+    width: 100px;
+}
+
+.alto {
+    background-color: brown;
+    height: 200px;
+}
+
+.tarjeta {
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+    border-width: 1px;
+    /* border-top: none; Quita el borde de arriba */
+    /*padding: 10px 20px 30px 40px;  10px top, 20px right, 30px down, 40px left*/
+    padding: 10px 20px; /* 10px top y down, 20px left y right*/
+    margin: 10px 20px;
+}

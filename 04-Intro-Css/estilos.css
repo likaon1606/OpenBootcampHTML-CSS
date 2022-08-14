@@ -1,0 +1,23 @@
+h1 {
+    color: red;
+}
+
+p {
+    color: blue;
+    font-size: 16pt;
+}
+
+/* tiene mayor especifidad, porque especifica que debe tener el id="primera-noticia" y ser un párrafo */
+p#primera-noticia {
+    color: yellow;
+    font-size: 20pt;
+}
+
+/*Selector universal "*"
+
+*.warning { se le dice que aplique los estilos a cualquier elemento con la clase .warning
+
+}
+
+*/
+
