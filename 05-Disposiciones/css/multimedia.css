@@ -1,3 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .imagen-principal {
     width: 100vw;/*vw significa que tomara el 100 por 100 de toda la pantalla*/
+    opacity: 0.5;/*la opacidad se mide entre 0 y 1*/
+}
+
+.imagen-principal:hover {
+    opacity: 1;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;/*pone espacio entre las imagenes*/
+}
+
+.imagen-galeria {
+    width: 300px;
+    height: 200px;
+}
+
+.imagen-galeria:hover {
+    opacity: 0.3;
+    cursor: pointer;
 }
