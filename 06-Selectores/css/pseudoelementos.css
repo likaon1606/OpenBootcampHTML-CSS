@@ -1,0 +1,50 @@
+/*Todos los pseudoelementos tienen un after y un before
+se caracterizan por :: doble punto a diferencia de las pseudoclases
+que solo tienen un : */
+
+.contenedor {
+    width: 300px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+div {
+    background-color: blue;
+}
+
+span.frase {
+    font-style: italic;
+}
+
+span.frase::before {
+    content: '<<';
+    font-size: xx-small;
+}
+
+span.frase::after {
+    content: '>>';
+    font-size: xx-small;
+}
+
+.libro {
+    background-color: bisque;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.libro p::first-letter {/*solo afecta a la primera letra del elemento*/
+    font-size: x-large;
+}
+
+.libro p::first-line {/*La primera línea en la web, aparecerá en blanco*/
+    color: white;
+}
+
+.libro p::selection {/*Hace referencia cuando seleccionas algo para copiarlo*/
+    background-color: chocolate;
+    color: lime;
+}
+
+.listado li::marker {/*afecta al punto, numero o simbolo de la lista ej: °, 1, . etc*/
+    color: red;
+}

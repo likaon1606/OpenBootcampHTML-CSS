@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .hover {
+            width: 300px;
+            height: 100px;
+            background-color: bisque;
+        }
+        .hover:hover {
+            background-color: brown;
+        }
+        .listado {
+            padding: 15px;
+            background-color: aquamarine;
+        }
+        .listado p:first-child {
+            color: white;
+        }
+        /* ATENCION!!
+        se debe llevar el orden de abajo en los links o los estilos
+        se van a pisar entre si
+        */
+        a:link {/*link, hace referencia al link no visitado todavía*/
+            color: deeppink;
+        }
+        a:visited {/*visited, hace referencia a los link que ya fueron pulsados o visitados*/
+            color: crimson;
+        }
+        a:hover {
+            color: blue;
+        }
+        a:active {/*active, al hacer click se cambia de color*/
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hover">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eaque voluptates nobis aliquam possimus
+            consequuntur repellendus totam unde, rem labore dolore nulla nemo at veritatis sapiente! Neque voluptate.
+        </p>
+    </div>
+    <div class="listado">
+        <p>parrafo1</p>
+        <p>parrafo2</p>
+        <p>parrafo3</p>
+    </div>
+    <div class="enlaces">
+        <a href="http://google.com" target="_blank">Enlace a Google.com</a>
+        <a href="http://marca.com" target="_blank">Enlace a Marca</a>
+    </div>
+</body>
+
+</html>

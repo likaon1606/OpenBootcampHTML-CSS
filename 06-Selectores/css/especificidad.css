@@ -1,0 +1,32 @@
+/* Especificidad 
+(1, 0, 0) 
+(0, 1, 0)
+(0, 0, 1)
+(0, 0, 0)
+*/
+/*
+!important va a prevalecer en todos los estilos, pero no es muy buena práctica
+los estilos en línea tienen mayor especificidad que el id
+el id tiene mayor especificidad que la clase*/
+/*tiene mayor especificidad la clase que el selector de etiqueta,por eso se aplica este*/
+
+/*para hacer referencia a otro id, se usa "\" 
+h1#h1-id\ h1-otroid.h1-clase de expresiones regulares*/
+/*(1, 1, 1)*/
+h1#h1-id.h1-clase {/*aumentamos la especificidad colocando id, además una clase al selector de etiqueta*/
+    color: green;
+}
+
+.h1-clase {
+    color: yellow !important;/*se aplica este porque tiene
+    mayor especificidad que el de abajo, aún con el !important*/
+}
+
+h1 {
+    color: blue !important;
+}
+
+
+p {
+    color: red;
+}

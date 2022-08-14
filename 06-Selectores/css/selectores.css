@@ -1,0 +1,11 @@
+.p-contenedor { /*mala practica poner muchas veces la misma clase*/
+    color: green;
+}
+
+section.main .contenedor p {
+    color: red;
+}
+
+.contenedor #boton-contenedor {
+    background-color: yellow;
+}
