@@ -12,7 +12,7 @@ button:hover {
 button::before {
     content: "Pasa por encima"
 }
-button:hover::before {
+button:active::before {
     content: "¡Hecho!"
 }
 
