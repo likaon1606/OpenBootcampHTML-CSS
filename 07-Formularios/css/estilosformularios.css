@@ -1,0 +1,71 @@
+.input {
+    width: 100%;
+    padding: 5px 10px;
+    border: 2px solid green;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* se puede acceder al otro input a través de 
+su tipo "password" o a través de sus atributos de etiqueta*/
+.input[type="password"] {
+    color: red;
+}
+
+.input-moderno {
+    border: none;
+    border-bottom: 1px solid #c2c2c2;
+    outline: none;
+    /*se quita el contorno cuadrado, cuand se escribe en el input*/
+    padding: 5px;
+    color: #5f5f5f;
+}
+
+/*para cambiar los atributos del placeholder en el input*/
+.input-moderno::placeholder {
+    color: #c2c2c2;
+}
+
+.input-moderno:focus {
+    border-bottom: 1px solid #5f5f5f;
+    /*resalta el elemento cuando se hace el enfoque*/
+}
+
+.input-background {
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    color: white;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.input-background::placeholder {
+    color: grey;
+}
+
+.input-search {
+    padding: 10px;
+    padding-left: 35px;
+    /* border: none; */
+    background-color: #eee;
+    border-radius: 8px;
+    margin: 10px;
+    background-image: url('../img/lupa.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+
+/*resize es una propiedad específica de los textarea
+nos permite redimensionar el textarea en horizontal o vertical*/
+textarea {
+    resize: horizontal ;/*none*/
+}
+
+select {
+    width: 100%;
+    padding: 15px;
+    background-color: #ccc;
+}
