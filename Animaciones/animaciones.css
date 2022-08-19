@@ -1,0 +1,50 @@
+/*Creando un cuadrado*/
+.padre {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.hijo {
+    width: 50%; /*50% del ancho del div padre*/
+    height: 50%;
+    background-color: beige;
+    /*all aplica la transicion para todos los efectos*/
+    /*transition: all 1s ease-in 2s;Con la transición le 
+    digo cuando quiero que tarde para hacer el 
+    efecto de transform, la propiedad ultima es para poner un retraso en el efecto */
+    animation: traslacion 3s ease-in-out infinite forwards alternate;
+    /*está animada siempre hasta que se pause*/
+}
+
+.padre:hover .hijo {/*Quiero que al hacer hover sobre el padre, el hijo haga algo*/
+    /* transform: translateX(100%);
+    background-color: blueviolet; */
+ /*esta animación es personalizada, aun no existe hasta que la declaremos*/
+ animation-play-state: paused;/*pausa el estado de la animacion*/
+}
+
+/*Aquí declaramos nuestra animación*/
+@keyframes traslacion {
+    0% { /*Estado inicial*/
+        background-color: beige;
+        transform: translateX(0%) translateY(0%);
+    }
+    25% {
+        transform: translateX(100%) translateY(0%);
+    }
+    50% {
+        transform: translateX(100%) translateY(100%);
+    }
+    /* 50% {
+        background-color: red;
+        transform: translateX(10%) translateY(50%);
+    } */
+    75% {
+        transform: translateX(0%) translateY(100%);
+    }
+    100% { /*Estado final, cuando llegue al final de la animacion*/
+        background-color: darkorange;
+        transform: translateX(0%) translateY(0%);
+    }
+}
