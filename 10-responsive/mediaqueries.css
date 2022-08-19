@@ -1,0 +1,50 @@
+h1 {
+    color: red;
+    font-size: 4rem;
+}
+
+p {
+    color: black;
+    font-size: 2rem;
+}
+
+/*print, cuando se manda imprimir en la impresora*/
+/* @media all and (max-width: 576px) es la medida standard
+y es lo mismo que lo de abajo @media (max-width: 576px)*/
+/* @media (max-width: 576px) {
+    h1 {
+        color: blue;
+    }
+} */
+
+@media (min-width: 576px) {
+    h1 {
+        color: green;
+    }
+}
+
+@media (min-width: 995px) {
+    h1 {
+        color: blue;
+    }
+}
+
+/*cuando se cambia  la orientación del mobile a horizontal,
+se aplica cuando la altura es menor que la anchura*/
+
+/*Se deben aplicar las 2 condiciones, si solo se cumple una,
+no funciona*/
+@media (orientation: landscape) and (min-height: 400px) {
+    p {
+        color: brown;
+    }
+}
+
+/*Aquí podemos alterar la vista cuando el alto llegue a 300px o más
+la "," es como el || u or en javascript*/
+@media (min-height: 300px), (min-width: 1100px) {
+    h1 {
+        color: darksalmon;
+    }
+}
+
