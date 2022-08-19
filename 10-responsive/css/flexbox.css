@@ -1,0 +1,30 @@
+.contenedor {
+    background-color: yellow;
+    padding: 0.5rem;
+    display: flex; 
+    gap: 0.5rem;
+    min-height: 5rem;/*para evitar el desbordamiento*/
+    /*Eje principal utiliza justify-content "Horizontal"*/
+    /* justify-content: center; */
+    justify-content: space-evenly;/*distribuye el espacio entre items de manera equitativa*/
+    /*Eje secundario "Vertical"*/
+    align-items: center;
+
+    /*flex-direction: column; distribuye los elementos en columna, el por defecto es "row"*/
+    /* align-items: center; */
+    flex-wrap: wrap;/*Envuelve a los elementos, cuando 
+    la pantalla es menor, los va colocando hacia abajo en columna*/
+}
+
+.item {
+    background-color: salmon;
+    padding: 0.25rem;
+    width: 10rem;
+}
+
+/*Modificar y hacer referencia a cada elemento que
+se encuentra en el contenedor principal o padre*/
+
+.item2 {
+    align-self: stretch;
+}
